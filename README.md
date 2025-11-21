@@ -6,6 +6,8 @@
 
 个人主页 展示
 
+访问 https://furina05.github.io 即可查看
+
 不定期更新内容
 
 📁 Source
