@@ -1107,6 +1107,23 @@
                             React.createElement("p", { className: "text-gray-600 dark:text-gray-300 leading-relaxed text-lg theme-transition" },
                                 "欢迎来到我的个人空间！这里没有复杂的代码哲学，只有我喜欢的动漫、音乐和游戏记录。随意逛逛吧，希望能让你感到放松。"
                             ),
+
+                            React.createElement("div", { className: "grid grid-cols-2 gap-6 pt-4" },
+                                React.createElement(motion.a, {
+                                    href: "https://home.hoshino.top",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    whileHover: { scale: 1.02 },
+                                    whileTap: { scale: 0.98 },
+                                    className: "col-span-2 p-4 rounded-2xl bg-purple-50 dark:bg-purple-900/20 cursor-pointer block group hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors theme-transition"
+                                },
+                                    React.createElement("h4", { className: "font-bold text-purple-900 dark:text-purple-100 mb-1 flex items-center justify-center gap-2 theme-transition" },
+                                        React.createElement(Compass, { className: "w-4 h-4" }),
+                                        "Furina 导航站",
+                                        React.createElement(ExternalLink, { className: "w-3 h-3 opacity-50" })
+                                    ),
+                                    React.createElement("p", { className: "text-sm text-purple-700 dark:text-purple-300 text-center theme-transition" }, "我的个人资源导航页")
+                                ),
                             
                             React.createElement("div", { className: "grid grid-cols-2 gap-6 pt-4" },
                                 // [新增] AKISATO 导航站 (全宽居中)
@@ -1123,7 +1140,7 @@
                                         "Furina's NAS",
                                         React.createElement(ExternalLink, { className: "w-3 h-3 opacity-50" })
                                     ),
-                                    React.createElement("p", { className: "text-sm text-purple-700 dark:text-purple-300 text-center theme-transition" }, "我的NAS导航页")
+                                    React.createElement("p", { className: "text-sm text-purple-700 dark:text-purple-300 text-center theme-transition" }, "我的NAS")
                                 ),
 
                                 React.createElement(motion.a, { 
@@ -1238,4 +1255,5 @@ const root = createRoot(document.getElementById('root'));
 root.render(React.createElement(App));
     </script>
 </body>
+
 </html>
