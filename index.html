@@ -1108,7 +1108,9 @@
                                 "欢迎来到我的个人空间！这里没有复杂的代码哲学，只有我喜欢的动漫、音乐和游戏记录。随意逛逛吧，希望能让你感到放松。"
                             ),
 
+                            // --- ✄ 从这里开始替换 (About Section 的按钮区域) ✄ ---
                             React.createElement("div", { className: "grid grid-cols-2 gap-6 pt-4" },
+                                // 1. Furina 导航站 (全宽 col-span-2)
                                 React.createElement(motion.a, {
                                     href: "https://home.hoshino.top",
                                     target: "_blank",
@@ -1124,25 +1126,25 @@
                                     ),
                                     React.createElement("p", { className: "text-sm text-purple-700 dark:text-purple-300 text-center theme-transition" }, "我的个人资源导航页")
                                 ),
-                            
-                            React.createElement("div", { className: "grid grid-cols-2 gap-6 pt-4" },
-                                // [新增] AKISATO 导航站 (全宽居中)
+
+                                // 2. Furina's NAS (全宽 col-span-2)
                                 React.createElement(motion.a, {
                                     href: "https://nas.hoshino.top:8088",
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     whileHover: { scale: 1.02 },
                                     whileTap: { scale: 0.98 },
-                                    className: "col-span-2 p-4 rounded-2xl bg-purple-50 dark:bg-purple-900/20 cursor-pointer block group hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors theme-transition"
+                                    className: "col-span-2 p-4 rounded-2xl bg-indigo-50 dark:bg-indigo-900/20 cursor-pointer block group hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors theme-transition"
                                 },
-                                    React.createElement("h4", { className: "font-bold text-purple-900 dark:text-purple-100 mb-1 flex items-center justify-center gap-2 theme-transition" },
-                                        React.createElement(Compass, { className: "w-4 h-4" }),
+                                    React.createElement("h4", { className: "font-bold text-indigo-900 dark:text-indigo-100 mb-1 flex items-center justify-center gap-2 theme-transition" },
+                                        React.createElement(Cloud, { className: "w-4 h-4" }),
                                         "Furina's NAS",
                                         React.createElement(ExternalLink, { className: "w-3 h-3 opacity-50" })
                                     ),
-                                    React.createElement("p", { className: "text-sm text-purple-700 dark:text-purple-300 text-center theme-transition" }, "我的NAS")
+                                    React.createElement("p", { className: "text-sm text-indigo-700 dark:text-indigo-300 text-center theme-transition" }, "我的私有云存储")
                                 ),
 
+                                // 3. Alist (占一半)
                                 React.createElement(motion.a, { 
                                     href: "https://alist.hoshino.top:8088",
                                     target: "_blank",
@@ -1155,8 +1157,10 @@
                                         "Alist", 
                                         React.createElement(ExternalLink, { className: "w-3 h-3 opacity-50" })
                                     ),
-                                    React.createElement("p", { className: "text-sm text-blue-700 dark:text-blue-300 theme-transition" }, "我的云端U盘")
+                                    React.createElement("p", { className: "text-sm text-blue-700 dark:text-blue-300 theme-transition" }, "云端U盘")
                                 ),
+
+                                // 4. Jellyfin (占一半)
                                 React.createElement(motion.a, { 
                                     href: "https://jellyfin.hoshino.top:8088",
                                     target: "_blank",
@@ -1169,9 +1173,10 @@
                                         "Jellyfin",
                                         React.createElement(ExternalLink, { className: "w-3 h-3 opacity-50" })
                                     ),
-                                    React.createElement("p", { className: "text-sm text-pink-700 dark:text-pink-300 theme-transition" }, "我的影音服务器")
+                                    React.createElement("p", { className: "text-sm text-pink-700 dark:text-pink-300 theme-transition" }, "影音服务")
                                 )
                             )
+                            // --- ✄ 替换结束 ✄ ---
                         )
                     )
                 ),
@@ -1257,3 +1262,4 @@ root.render(React.createElement(App));
 </body>
 
 </html>
+
